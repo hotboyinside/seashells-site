@@ -1,0 +1,54 @@
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+.btn {
+    position: relative;
+    background: var(--gradient-color-blue);
+    padding: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #fff;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out
+}
+
+.btn__text {
+    position: relative;
+    z-index: 1;
+}
+
+.btn:focus {
+    outline: none;
+    background: none;
+    background-color: #F46244;
+}
+
+
+.btn:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F46244;
+    transition: all .3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.btn:hover::after {
+    transform: translateX(0);
+}
+
+.btn:active {
+    outline: none;
+    background: none;
+    background-color: #F46244;
+}
+

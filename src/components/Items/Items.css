@@ -1,0 +1,114 @@
+.items {
+    padding-top: 164px;
+    padding-bottom: 232px;
+}
+
+.items__container {
+    overflow: hidden;
+}
+
+.items__title {
+    text-align: right;
+    margin: 0;
+    padding-right: 80px;
+    font-weight: 300;
+    font-size: 88px;
+    line-height: 100%;
+    letter-spacing: 0.17em;
+    color: #333;
+}
+
+.cards {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 190px;
+    padding-bottom: 5px;
+}
+
+.card {
+    position: relative;
+    max-width: 760px;
+    display: flex;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25); 
+}
+
+.card__image {
+    max-width: 380px;
+}
+
+.card__desc {
+    max-width: 380px;
+    padding: 40px;
+}
+
+.card__title {
+    margin: 0;
+    margin-bottom: 130px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #333;
+}
+
+.card__text {
+    width: 300px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #333;
+}
+
+.control {
+    position: absolute;
+    content: '';
+    bottom: 140px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-color-blue);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.card__left-control {
+    right: -30px;
+    transform: rotate(180deg);
+}
+
+.card__right-control {
+    left: -30px;
+}
+
+.card__left-control::after {
+    position: absolute;
+    content: '';
+    bottom: 22px;
+    left: 17px;
+    width: 25px;
+    height: 16px;
+    background-image: url('images/arrow-btn.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card__right-control::after  {
+    position: absolute;
+    content: '';
+    bottom: 22px;
+    left: 17px;
+    width: 25px;
+    height: 16px;
+    background-image: url('images/arrow-btn.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+

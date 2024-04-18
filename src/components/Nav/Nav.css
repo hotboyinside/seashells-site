@@ -1,0 +1,10 @@
+.nav {
+    margin-right: 182px;
+}
+
+.nav__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
