@@ -8,6 +8,7 @@
     --cards-count: 2;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 80px;
     padding-bottom: 40px;
@@ -15,7 +16,6 @@
 
 .about__video {
     width: 600px;
-    background-color: #fff;
 }
 
 .about__desc {
@@ -24,7 +24,7 @@
     flex-wrap: wrap;
     width: 600px;
     background-color: #fff;
-    padding: 30px 50px;
+    padding: 33px 50px;
 }
 
 .about__title {

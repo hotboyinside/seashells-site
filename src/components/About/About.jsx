@@ -14,6 +14,7 @@ export default function About() {
                         controls
                         width="100%"
                         height="100%"
+                        className="about__video"
                         />
                     </div>
                     <div className="about__desc">

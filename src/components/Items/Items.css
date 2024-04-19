@@ -1,6 +1,5 @@
 .items {
-    padding-top: 164px;
-    padding-bottom: 232px;
+    padding: 160px 0;
 }
 
 .items__container {
@@ -65,8 +64,3 @@
     letter-spacing: 0.05em;
     color: #333;
 }
-
-
-
-
-

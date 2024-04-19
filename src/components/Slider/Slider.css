@@ -1,0 +1,50 @@
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+    position: relative;
+    padding-bottom: 4px;
+  }
+  
+  .slider-controler {
+    z-index: 1;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .slider-arrow {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: var(--background-color-blue);
+    cursor: pointer;
+  }
+  
+  .swiper-button-next::after {
+    position: absolute;
+    content: '';
+    left: 17px;
+    top: 21px;
+    width: 25px;
+    height: 16px;
+    background-image: url('images/arrow-btn.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .swiper-button-prev::after {
+    position: absolute;
+    content: '';
+    left: 17px;
+    top: 21px;
+    width: 25px;
+    height: 16px;
+    background-image: url('images/arrow-btn.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+  }
