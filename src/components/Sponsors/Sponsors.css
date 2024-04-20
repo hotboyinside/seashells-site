@@ -1,0 +1,33 @@
+.sponsors {
+    width: 100%;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.sponsors__container {
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.sponsors__wrapper {
+    width: 200%;
+    display: flex;
+    animation: running-text 10s linear infinite;
+}
+
+.sponsors__running_string {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes running-text {
+    0% {
+        transform: translateX();
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

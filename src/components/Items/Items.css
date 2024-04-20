@@ -41,13 +41,15 @@
 }
 
 .card__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 380px;
     padding: 40px;
 }
 
 .card__title {
     margin: 0;
-    margin-bottom: 130px;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;

@@ -59,9 +59,9 @@ img {
 
 @font-face {
   font-family: "OpenSans";
-  src: local("OpenSans-Bold"),
-  url(fonts/OpenSans-Bold.woff2) format("woff2");
-  font-weight: 700;
+  src: local("OpenSans-SemiBold"),
+  url(fonts/OpenSans-SemiBold.woff2) format("woff2");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
