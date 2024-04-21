@@ -5,6 +5,7 @@ import Items from './components/Items/Items'
 import ProgrammeSpeakers from './components/ProgrammeSpeakers/ProgrammeSpeakers'
 import Sponsors from './components/Sponsors/Sponsors'
 import Participant from './components/Participant/Participant'
+import Footer from './components/Footer/Footer'
 import './App.css'
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <ProgrammeSpeakers />
         <Sponsors />
         <Participant />
+        <Footer />
       </main>
     </>
   )

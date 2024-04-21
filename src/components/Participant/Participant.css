@@ -31,12 +31,17 @@
 }
 
 .form__left {
-    width: 385px;
+    width: 386px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 53px 43px;
-    background: var(--gradient-color-blue);
+    background-color: transparent;
+    background-image: url('images/ticket-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: transform 0.3s ease-in-out;
 }
 
 .form__input {
@@ -57,11 +62,26 @@
 }
 
 .form__btn {
+    width: 209px;
     padding: 100px 40px;
-    background-color: #fff;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.05em;
     color: #333;
+    background-size: 100% 100%;
+    background-image: url('images/btn-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-5px);
+    background-color: transparent;
+}
+
+.form__btn:hover {
+    transform: translate(20px, 20px) rotate(3deg);
+}
+
+.active {
+    transform: translate(-20px, 20px) rotate(-3deg);;
 }

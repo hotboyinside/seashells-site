@@ -6,11 +6,12 @@
   }
 
 .btn {
+    min-width: 182px;
     position: relative;
     background: var(--gradient-color-blue);
     padding: 15px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 150%;
     letter-spacing: 0.05em;
     color: #fff;

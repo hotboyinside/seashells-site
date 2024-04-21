@@ -1,0 +1,32 @@
+.footer {
+    padding: 15px 0;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-right: auto;
+}
+
+.footer__question {
+    min-width: 120px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #333;
+    margin-right: 80px;
+}
+
+.footer__buttons {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
