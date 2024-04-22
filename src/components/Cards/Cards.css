@@ -10,6 +10,7 @@
     width: calc(100% - var(--cards-count) * 4px / var(--cards-count));
     padding: 20px;
     background-color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 
 .about__cards-item:not(:last-child) {
@@ -23,6 +24,7 @@
     line-height: 150%;
     letter-spacing: 0.05em;
     color: #333;
+    transition: color 0.3s ease-in-out;
 }
 
 .about__cards-title-part2 {
@@ -34,4 +36,5 @@
     font-size: 96px;
     line-height: 100%;
     color: #4b58a1;
+    transition: color 0.3s ease-in-out;
 }

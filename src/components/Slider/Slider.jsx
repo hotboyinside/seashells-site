@@ -94,8 +94,8 @@ export default function Slider() {
                     </div>
                 </SwiperSlide>
                 <div className="slider-controler">
-                    <div className="swiper-button-prev slider-arrow"></div>
-                    <div className="swiper-button-next slider-arrow"></div>
+                    <div tabIndex='0' className="swiper-button-prev slider-arrow"></div>
+                    <div tabIndex='0' className="swiper-button-next slider-arrow"></div>
                 </div>
             </Swiper>
         </div>

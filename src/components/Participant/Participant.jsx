@@ -3,12 +3,12 @@ import './Participant.css'
 export default function Participant() {
     function handleMouseOver() {
         const leftTicketBlock = document.querySelector('.form__left')
-        leftTicketBlock.classList.add('active')
+        leftTicketBlock.classList.add('active-btn')
     }
 
     function handleMouseOut() {
         const leftTicketBlock = document.querySelector('.form__left')
-        leftTicketBlock.classList.remove('active')
+        leftTicketBlock.classList.remove('active-btn')
     }
     return(
         <section className='participant'>
