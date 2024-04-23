@@ -53,3 +53,9 @@
     background-color: #F46244;
 }
 
+
+@media (max-width: 1200px) {
+    .btn {
+        order: 2;
+    }
+}

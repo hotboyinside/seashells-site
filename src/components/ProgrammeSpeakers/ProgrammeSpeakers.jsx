@@ -57,21 +57,21 @@ export default function ProgrammeSpeakers() {
             <h2 className="speakers__title title">Приглашенные спикеры</h2>
                 <div ref={cardsRef} className='speakers__cards'>
                     <div className={`speakers__card ${cardsVisible ? 'active-card': ''}`}>
-                        <img className='speakers__photo' src="images/avatar-1.jpg" alt="speaker-photo" />
+                        <img className='speakers__photo' src="images/avatar-1.jpg" alt="speaker1" />
                         <div className="speakers__content">
                             <h3 className='speakers__name'>Алексей Пикута</h3>
                             <p className='speakers__desc'>Коллекционер с&nbsp;25-летним опытом.</p>
                         </div>
                     </div>
                     <div className={`speakers__card ${cardsVisible ? 'active-card': ''}`}>
-                        <img className='speakers__photo' src="images/avatar-2.jpg" alt="speaker-photo" />
+                        <img className='speakers__photo' src="images/avatar-2.jpg" alt="speaker2" />
                         <div className="speakers__content">
                             <h3 className='speakers__name'>Людмила Петровна</h3>
                             <p className='speakers__desc'>Ученый-океанолог, коллекционер.</p>
                         </div>
                     </div>
                     <div className={`speakers__card ${cardsVisible ? 'active-card': ''}`}>
-                        <img className='speakers__photo' src="images/avatar-3.jpg" alt="speaker-photo" />
+                        <img className='speakers__photo' src="images/avatar-3.jpg" alt="speaker3" />
                         <div className="speakers__content">
                             <h3 className='speakers__name'>Геннадий Яковлев</h3>
                             <p className='speakers__desc'>Коллекционер-продавец.</p>

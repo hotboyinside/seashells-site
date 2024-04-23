@@ -1,3 +1,9 @@
 .logo {
     margin-right: auto;
 }
+
+@media (max-width: 1200px) {
+    .logo {
+        order: 0;
+    }
+}

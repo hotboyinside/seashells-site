@@ -1,5 +1,5 @@
 .footer {
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .footer__container {
@@ -10,9 +10,48 @@
 .social {
     width: 100%;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: 40px;
-    margin-right: auto;
+}
+
+.social__link {
+    display: block;
+    width: 33px;
+    height: 33px;
+}
+
+.social__link:focus {
+    outline-offset: 2px;
+    outline: 1px solid var(--color-active);
+}
+
+.social__link:hover {
+    outline: none;
+}
+
+.vk-icon rect {
+    transition: fill 0.3s ease-in-out;
+}
+
+.whats-up {
+    transition: fill 0.3s ease-in-out;
+}
+
+.social__link:hover .vk-icon rect {
+    fill: var(--color-active);
+}
+
+.social__link:active .vk-icon rect {
+    fill: var(--color-active);
+}
+
+.social__link:hover .whats-up {
+    fill: var(--color-active);
+}
+
+.social__link:active .whats-up {
+    fill: var(--color-active);
 }
 
 .footer__question {

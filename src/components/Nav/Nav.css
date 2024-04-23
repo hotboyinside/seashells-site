@@ -2,6 +2,18 @@
     margin-right: 180px;
 }
 
+@media (max-width: 1200px) {
+    .nav {
+        order: 1;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav {
+        display: none;
+    }
+}
+
 .nav__items {
     display: flex;
     align-items: center;
