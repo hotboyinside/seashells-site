@@ -69,3 +69,17 @@
     align-items: center;
     gap: 60px;
 }
+
+@media (max-width: 992px) {
+    .footer__container {
+        gap: 20px;
+    }
+
+    .social {
+        gap: 20px;
+    }
+
+    .footer__buttons {
+        gap: 30px
+    }
+}

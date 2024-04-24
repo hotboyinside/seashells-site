@@ -42,3 +42,21 @@
     text-align: center;
     color: #fff;
 }
+
+@media (max-width: 1200px) {
+    .hero__container {
+        grid-template-columns: 1fr 4fr 1fr
+    }
+}
+
+@media (max-width: 992px) {
+    .hero__container {
+        grid-template-columns: 1fr 8fr 1fr
+    }
+}
+
+@media (max-width: 776px) {
+    .hero_title {
+        font-size: 28px;
+    }
+}

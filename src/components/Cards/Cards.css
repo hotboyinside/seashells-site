@@ -38,3 +38,13 @@
     color: #4b58a1;
     transition: color 0.3s ease-in-out;
 }
+
+@media (max-width: 992px) {
+    .about__cards-item {
+        padding: 15px;
+    }
+
+    .about__cards-number {
+        font-size: 76px;
+    }
+}

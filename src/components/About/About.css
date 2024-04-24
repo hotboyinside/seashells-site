@@ -5,32 +5,30 @@
 }
 
 .about__upper-content {
-    --cards-count: 2;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 80px;
     padding-bottom: 40px;
 }
 
 .about__video {
-    width: 600px;
+    flex-basis: 41%;
 }
 
 .about__desc {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 600px;
+    flex-basis: 41%;
     background-color: #fff;
-    padding: 33px 50px;
+    padding: 20px 20px;
 }
 
 .about__title {
     align-self: end;
     margin: 0;
-    margin-bottom: 30px;
     font-size: 42px;
     line-height: 150%;
     color: #333;
@@ -48,4 +46,106 @@
 .about__bottom-content {
     padding: 40px 16px 0 16px;
     background-color: var(--background-color-blue);
+}
+
+@media (max-width:1200px) {
+    .about__video {
+        flex-basis: 45%;
+    }
+
+    .about__desc {
+        flex-basis: 45%;
+        padding: 38px 30px;
+    }
+
+    .about__text--bg {
+        display: none;
+    }
+
+    .about__title {
+        font-size: 35px;
+    }
+
+    .about__text--bg {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+    .about__upper-content {
+        align-items: center;
+        gap: 6px;
+        padding-bottom: 6px;
+    }
+
+    .about__video {
+        flex-basis: 48%;
+    }
+
+    .about__desc {
+        flex-basis: 48%;
+        padding: 20px 30px;
+    }
+
+    .about__text--bg {
+        display: none;
+    }
+
+    .about__title {
+        font-size: 28px;
+        margin-bottom: 0px;
+    }
+
+    .about__bottom-content {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width:776px) {
+    .about__container {
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .about__title {
+        align-self: start;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .about__upper-content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .about__bottom-content {
+        padding: 0;
+    }
+
+    .about__cards {
+        --cards-count: 2;
+        --gap: 6px;
+        flex-wrap: wrap;
+        gap: var(--gap);
+    }
+
+    .about__cards-item {
+        width: calc((100% - (var(--cards-count) - 1) * var(--gap)) / var(--cards-count));
+    }
+
+    .about__cards-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .about__desc {
+        order: 0;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .about__video {
+        order: 1;
+    }
 }
