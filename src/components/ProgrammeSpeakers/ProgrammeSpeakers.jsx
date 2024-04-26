@@ -31,6 +31,7 @@ export default function ProgrammeSpeakers() {
             <h2 className="programme__title title">Программа<br />мероприятия</h2>
             <div className='programme__content timeline'>
                 <div className={`timeline__line ${keypointsVisible ? 'timeline-active' : ''}`}></div>
+                <div className={`timeline__vertical-line ${keypointsVisible ? 'timeline-vertical-active' : ''}`}></div>
                 <ul ref={keypointsRef} className='timeline__keypoints list-reset'>
                     <li className={`timeline__keypoint ${keypointsVisible ? 'keypoint-active' : ''}`}>
                         <time className='timeline__time'>10:00</time>
@@ -55,29 +56,30 @@ export default function ProgrammeSpeakers() {
                 </ul>
             </div>
             <h2 className="speakers__title title">Приглашенные спикеры</h2>
-                <div ref={cardsRef} className='speakers__cards'>
-                    <div className={`speakers__card ${cardsVisible ? 'active-card': ''}`}>
-                        <img className='speakers__photo' src="images/avatar-1.jpg" alt="speaker1" />
-                        <div className="speakers__content">
-                            <h3 className='speakers__name'>Алексей Пикута</h3>
-                            <p className='speakers__desc'>Коллекционер с&nbsp;25-летним опытом.</p>
-                        </div>
+            <div ref={cardsRef} className='speakers__cards'>
+                <div className={`speakers__card ${cardsVisible ? 'active-card': ''}`}>
+                    <img className='speakers__photo' src="images/avatar-1.jpg" alt="speaker1" />
+                    <div className="speakers__content">
+                        <h3 className='speakers__name'>Алексей Пикута</h3>
+                        <p className='speakers__desc'>Коллекционер с&nbsp;25-летним опытом.</p>
                     </div>
-                    <div className={`speakers__card ${cardsVisible ? 'active-card': ''}`}>
-                        <img className='speakers__photo' src="images/avatar-2.jpg" alt="speaker2" />
-                        <div className="speakers__content">
-                            <h3 className='speakers__name'>Людмила Петровна</h3>
-                            <p className='speakers__desc'>Ученый-океанолог, коллекционер.</p>
-                        </div>
+                </div>
+                <div className={`speakers__card ${cardsVisible ? 'active-card': ''}`}>
+                    <img className='speakers__photo' src="images/avatar-2.jpg" alt="speaker2" />
+                    <div className="speakers__content">
+                        <h3 className='speakers__name'>Людмила Петровна</h3>
+                        <p className='speakers__desc'>Ученый-океанолог, коллекционер.</p>
                     </div>
-                    <div className={`speakers__card ${cardsVisible ? 'active-card': ''}`}>
-                        <img className='speakers__photo' src="images/avatar-3.jpg" alt="speaker3" />
-                        <div className="speakers__content">
-                            <h3 className='speakers__name'>Геннадий Яковлев</h3>
-                            <p className='speakers__desc'>Коллекционер-продавец.</p>
-                        </div>
+                </div>
+                <div className={`speakers__card ${cardsVisible ? 'active-card': ''}`}>
+                    <img className='speakers__photo' src="images/avatar-3.jpg" alt="speaker3" />
+                    <div className="speakers__content">
+                        <h3 className='speakers__name'>Геннадий Яковлев</h3>
+                        <p className='speakers__desc'>Коллекционер-продавец.</p>
                     </div>
+                </div>
             </div>
+            
         </div>
     </section>
     )
