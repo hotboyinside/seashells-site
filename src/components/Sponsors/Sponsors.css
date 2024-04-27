@@ -31,3 +31,19 @@
         transform: translateX(-50%);
     }
 }
+
+@media (max-width: 768px) {
+    .sponsor__icon--bg {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .sponsor__icon--mid {
+        display: none;
+    }
+
+    .sponsors__wrapper {
+        animation: running-text 6s linear infinite;
+    }
+}

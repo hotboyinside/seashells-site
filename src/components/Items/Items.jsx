@@ -6,7 +6,7 @@ export default function Items() {
         <section className='items'>
             <div className="items__container">
                 <h2 className='items__title'>экспонаты</h2>
-                <Slider />
+                <Slider type="items"/>
             </div>
         </section>
     )

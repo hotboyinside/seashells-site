@@ -60,3 +60,9 @@
         font-size: 28px;
     }
 }
+
+@media (max-width: 576px) {
+    .hero__container {
+        grid-template-columns: 1fr 16fr 1fr
+    }
+}

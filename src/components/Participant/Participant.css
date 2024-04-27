@@ -107,3 +107,34 @@
 .active-btn {
     transform: translate(-20px, 20px) rotate(-3deg);;
 }
+
+@media (max-width: 768px) {
+    .participant__title {
+        font-size: 28px;
+    }
+
+    .form__left {
+        width: auto;
+    }
+
+    .form__input {
+        min-width: 245px;
+        font-size: 14px;
+    }
+
+    .form__btn {
+        width: auto;
+        font-size: 17px;
+        padding: 100px 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .form__left {
+        padding: 53px 15px;
+    }
+
+    .form__btn {
+        padding: 100px 15px;
+    }
+}

@@ -182,6 +182,10 @@
     letter-spacing: 0.05em;
     color: #333;
   }
+
+  .speakers__slider {
+    display: none;
+  }
   
   
   @media (max-width: 1200px) {
@@ -240,6 +244,14 @@
 
     .speakers__title {
       font-size: 28px;
+    }
+
+    .speakers__cards {
+      display: none;
+    }
+
+    .speakers__slider {
+      display: block;
     }
   }
   

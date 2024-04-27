@@ -1,3 +1,4 @@
+import Slider from '../Slider/Slider'
 import './ProgrammeSpeakers.css'
 import { useEffect, useRef, useState } from 'react'
 
@@ -75,11 +76,11 @@ export default function ProgrammeSpeakers() {
                     <img className='speakers__photo' src="images/avatar-3.jpg" alt="speaker3" />
                     <div className="speakers__content">
                         <h3 className='speakers__name'>Геннадий Яковлев</h3>
-                        <p className='speakers__desc'>Коллекционер-продавец.</p>
+                        <p className='speakers__desc'>Коллекционер-малаколог.</p>
                     </div>
                 </div>
             </div>
-            
+            <div className='speakers__slider'><Slider type='persons'></Slider></div>
         </div>
     </section>
     )

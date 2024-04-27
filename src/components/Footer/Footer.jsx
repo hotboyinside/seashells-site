@@ -22,7 +22,7 @@ export default function Footer() {
                         </a>
                     </li>
                 </ul>
-                <span className='footer__question'>Есть вопрос?</span>
+                <span className='footer__question'>Есть вопросы?</span>
                 <div className='footer__buttons'>
                     <Button>Почта</Button>
                     <Button>Телеграмм-чат</Button>

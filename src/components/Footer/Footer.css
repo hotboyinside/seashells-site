@@ -83,3 +83,15 @@
         gap: 30px
     }
 }
+
+@media (max-width: 768px) {
+    .footer__question {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer__buttons {
+        gap: 20px
+    }
+}
