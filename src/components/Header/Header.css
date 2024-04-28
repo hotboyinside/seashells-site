@@ -8,8 +8,8 @@
     flex-wrap: wrap;
 }
 
-/* @media (max-width: 1200px) {
-    .header__container {
-        flex-direction: row-reverse;
+@media (max-width: 480px) {
+    .header {
+        display: none;
     }
-} */
+}

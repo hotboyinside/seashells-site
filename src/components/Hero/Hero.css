@@ -13,6 +13,12 @@
     padding: 230px 20px 20px 20px;
 }
 
+.hero__header-mobile {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .hero_title {
     margin: 0;
     padding: 0;
@@ -64,5 +70,43 @@
 @media (max-width: 576px) {
     .hero__container {
         grid-template-columns: 1fr 16fr 1fr
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-bottom: 60px;
+    }
+
+    .hero__container {
+        display: block;
+        padding: 0;
+        background-image: url('images/hero-background-mobile.jpg');
+    }
+
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px 20px 30px 20px;
+    }
+
+    .hero__blank-block {
+        display: none;
+    }
+
+    .hero__header-mobile {
+        display: flex;
+        margin-bottom: 221px;
+    }
+
+    .hero_address {
+        align-self: flex-start;
+        text-align: left;
+    }
+
+    .hero__date {
+        align-self: flex-start;
+        text-align: left;
     }
 }

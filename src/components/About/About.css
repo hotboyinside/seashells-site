@@ -1,7 +1,6 @@
 .about {
-    padding-top: 80px;
+    padding: 80px 0;
     background-color: var(--background-color-blue);
-    padding-bottom: 80px;
 }
 
 .about__upper-content {
@@ -46,6 +45,18 @@
 .about__bottom-content {
     padding: 40px 16px 0 16px;
     background-color: var(--background-color-blue);
+}
+
+.about__text--mobile {
+    display: none;
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #333;
 }
 
 @media (max-width:1200px) {
@@ -147,5 +158,27 @@
 
     .about__video {
         order: 1;
+    }
+}
+
+@media (max-width:480px) {
+    .about {
+        padding: 60px 0;
+    }
+
+    .about__text {
+        text-align: left;
+    }
+
+    .about__text--bg {
+        display: inline;
+    }
+
+    .about__text--desktop {
+        display: none;
+    }
+
+    .about__text--mobile {
+        display: block;
     }
 }
