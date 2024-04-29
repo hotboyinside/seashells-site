@@ -9,7 +9,7 @@
     align-items: stretch;
     flex-wrap: wrap;
     gap: 80px;
-    padding-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .about__video {
@@ -22,7 +22,7 @@
     flex-wrap: wrap;
     flex-basis: 41%;
     background-color: #fff;
-    padding: 20px 20px;
+    padding: 20px;
 }
 
 .about__title {
@@ -43,7 +43,7 @@
 }
 
 .about__bottom-content {
-    padding: 40px 16px 0 16px;
+    padding: 0 16px;
     background-color: var(--background-color-blue);
 }
 
@@ -66,7 +66,6 @@
 
     .about__desc {
         flex-basis: 45%;
-        padding: 38px 30px;
     }
 
     .about__text--bg {
@@ -86,7 +85,7 @@
     .about__upper-content {
         align-items: center;
         gap: 6px;
-        padding-bottom: 6px;
+        margin-bottom: 6px;
     }
 
     .about__video {
@@ -95,7 +94,6 @@
 
     .about__desc {
         flex-basis: 48%;
-        padding: 20px 30px;
     }
 
     .about__text--bg {

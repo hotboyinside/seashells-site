@@ -36,19 +36,19 @@ export default function ProgrammeSpeakers() {
                 <ul ref={keypointsRef} className='timeline__keypoints list-reset'>
                     <li className={`timeline__keypoint ${keypointsVisible ? 'keypoint-active' : ''}`}>
                         <time className='timeline__time'>10:00</time>
-                        <span className='timeline__desc'>Начало<br />выставки</span>
+                        <span className='timeline__desc'>Начало<br/>выставки</span>
                     </li>
                     <li className={`timeline__keypoint ${keypointsVisible ? 'keypoint-active' : ''}`}>
                         <time className='timeline__time'>12:00</time>
-                        <span className='timeline__desc'>Лекция<br />“Как найти хобби<br />на всю жизнь”</span>
+                        <span className='timeline__desc'>Лекция <br className='programme__desktop-offset' />“Как найти<br className='programme__mobile-offset' /> хобби<br className='programme__desktop-offset' /> на всю<br className='programme__mobile-offset' /> жизнь”</span>
                     </li>
                     <li className={`timeline__keypoint ${keypointsVisible ? 'keypoint-active' : ''}`}>
                         <time className='timeline__time'>15:00</time>
-                        <span className='timeline__desc'>Мастер-класс<br />“Обработка морских<br />раковин”</span>
+                        <span className='timeline__desc'>Мастер-класс<br />“Обработка<br className='programme__mobile-offset' /> морских <br className='programme__desktop-offset' />раковин”</span>
                     </li>
                     <li className={`timeline__keypoint ${keypointsVisible ? 'keypoint-active' : ''}`}>
                         <time className='timeline__time'>17:00</time>
-                        <span className='timeline__desc'>Лекция<br />&laquo;О&nbsp;раковинах больших<br />и&nbsp;маленьких&raquo;</span>
+                        <span className='timeline__desc'>Лекция<br />&laquo;О&nbsp;раковинах<br className='programme__mobile-offset' /> больших<br /> и&nbsp;маленьких&raquo;</span>
                     </li>
                     <li className={`timeline__keypoint ${keypointsVisible ? 'keypoint-active' : ''}`}>
                         <time className='timeline__time'>20:00</time>

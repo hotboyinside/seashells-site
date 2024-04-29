@@ -51,13 +51,15 @@
 
 @media (max-width: 1200px) {
     .hero__container {
-        grid-template-columns: 1fr 4fr 1fr
+        grid-template-columns: 1fr 4fr 1fr;
+        background-image: url('images/hero-background-1194.jpg');
     }
 }
 
 @media (max-width: 992px) {
     .hero__container {
-        grid-template-columns: 1fr 8fr 1fr
+        grid-template-columns: 1fr 8fr 1fr;
+        background-image: url('images/hero-background-992.jpg');
     }
 }
 
@@ -69,13 +71,14 @@
 
 @media (max-width: 576px) {
     .hero__container {
-        grid-template-columns: 1fr 16fr 1fr
+        grid-template-columns: 1fr 16fr 1fr;
+        background-image: url('images/hero-background-578.jpg');
     }
 }
 
 @media (max-width: 480px) {
     .hero {
-        padding-bottom: 60px;
+        padding-bottom: 0px;
     }
 
     .hero__container {

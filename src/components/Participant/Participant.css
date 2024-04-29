@@ -108,6 +108,18 @@
     transform: translate(-20px, 20px) rotate(-3deg);;
 }
 
+@media (max-width: 1200px) {
+    .participant {
+        background-image: url('images/participant-background-1194.jpg');
+    }
+}
+
+@media (max-width: 992px) {
+    .participant {
+        background-image: url('images/participant-background-992.jpg');
+    }
+}
+
 @media (max-width: 768px) {
     .participant__title {
         font-size: 28px;
@@ -130,11 +142,39 @@
 }
 
 @media (max-width: 576px) {
+    .participant {
+        background-image: url('images/participant-background-992.jpg');
+    }
+    
     .form__left {
         padding: 53px 15px;
     }
 
     .form__btn {
         padding: 100px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .participant {
+        padding: 60px 0;
+        background-image: url('images/participant-background-mobile.jpg');
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .form__left {
+        background-image: none;
+        background: var(--gradient-color-blue);
+        padding: 50px 15px;
+    }
+
+    .form__btn {
+        background-image: none;
+        background-color: #fff;
+        padding: 15px;
+        transform: translateX(0);
     }
 }

@@ -41,10 +41,29 @@
 
 @media (max-width: 992px) {
     .about__cards-item {
-        padding: 15px;
+        padding: 10px;
     }
 
     .about__cards-number {
         font-size: 76px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about__cards-item {
+        align-items: center;
+    }
+
+    .about__cards-number {
+        align-self: center;
+        order: 1;
+        margin-bottom: 5px;
+        font-size: 36px;
+    }
+
+    .about__cards-title-part1, .about__cards-title-part2 {
+        font-size: 14px;
+        order: 2;
+        margin: 0;
     }
 }

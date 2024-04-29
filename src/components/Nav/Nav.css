@@ -2,23 +2,15 @@
     margin-right: 180px;
 }
 
-@media (max-width: 1200px) {
-    .nav {
-        order: 1;
-    }
-}
-
-@media (max-width: 992px) {
-    .nav {
-        display: none;
-    }
-}
-
 .nav__items {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.footer__nav {
+    gap: 10px;
 }
 
 .nav__link {
@@ -41,4 +33,23 @@
 
 .nav__link:active {
     color: var(--color-active);
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        order: 1;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        display: block;
+        margin-bottom: 30px;
+    }
 }

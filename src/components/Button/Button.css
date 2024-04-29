@@ -19,6 +19,11 @@
     transition: background-color 0.3s ease-in-out
 }
 
+.btn--white-color {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
 .btn__text {
     position: relative;
     z-index: 1;

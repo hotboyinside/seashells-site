@@ -77,3 +77,22 @@
     z-index: 1;
   }
 }
+
+@media (max-width: 480px) {
+  .slider-arrow {
+    width: 46px;
+    height: 46px;
+  }
+
+  .slider-controler {
+    padding-top: 15px;
+  }
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    width: 20px;
+    height: 15px;
+    top: 16px;
+    left: 13px;
+    background-size: 20px;
+  }
+}

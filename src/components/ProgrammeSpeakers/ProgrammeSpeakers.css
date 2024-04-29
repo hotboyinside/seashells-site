@@ -1,7 +1,6 @@
 .programme {
-    padding-top: 80px;
+    padding: 80px 0;
     background-color: var(--background-color-blue);
-    padding-bottom: 80px;
 }
 
 .programme__content {
@@ -80,6 +79,10 @@
     line-height: 150%;
     letter-spacing: 0.05em;
     color: #333;
+}
+
+.programme__mobile-offset {
+  display: none;
 }
 
 .timeline__keypoints {
@@ -252,6 +255,41 @@
 
     .speakers__slider {
       display: block;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .programme {
+      padding: 60px 0;
+    }
+
+    .programme__title {
+      margin-bottom: 40px;
+    }
+
+    .timeline__time {
+      font-weight: 400;
+      font-size: 17px;
+    }
+
+    .programme__desktop-offset {
+      display: none;
+    }
+
+    .programme__mobile-offset {
+      display: block;
+    }
+
+    .timeline__vertical-line {
+      left: 28%;
+    }
+
+    .programme__content {
+      margin-bottom: 60px;
+    }
+
+    .speakers__title {
+      margin-bottom: 20px;
     }
   }
   

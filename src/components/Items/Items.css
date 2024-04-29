@@ -41,7 +41,7 @@
     }
 
     .items__title {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         text-align: left;
         text-transform: capitalize;
         font-family: "IgraSans", sans-serif;
@@ -49,5 +49,11 @@
         font-size: 28px;
         line-height: 150%;
         letter-spacing: 0.05em;
+    }
+}
+
+@media (max-width: 480px) {
+    .items {
+        padding: 60px 0;
     }
 }

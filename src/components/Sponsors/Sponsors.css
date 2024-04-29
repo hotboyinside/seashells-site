@@ -47,3 +47,17 @@
         animation: running-text 6s linear infinite;
     }
 }
+
+@media (max-width: 480px) {
+    .sponsors {
+        padding: 60px 0;
+    }
+
+    .sponsor__icon--mobile {
+        display: none;
+    }
+
+    .sponsors__wrapper {
+        animation: running-text 4s linear infinite;
+    }
+}
