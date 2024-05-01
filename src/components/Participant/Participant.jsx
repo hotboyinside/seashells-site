@@ -11,7 +11,7 @@ export default function Participant() {
         leftTicketBlock.classList.remove('active-btn')
     }
     return(
-        <section className='participant'>
+        <section id='participant' className='participant'>
             <div className="participant__container container">
                 <h2 className='participant__title title'>Стань участником</h2>
                 <p className="participant__desc">Если вы&nbsp;коллекционер морских раковин и&nbsp;желаете показать и&nbsp;продать свои раковины, заполните форму ниже.</p>

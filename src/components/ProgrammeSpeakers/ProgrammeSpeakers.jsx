@@ -27,7 +27,7 @@ export default function ProgrammeSpeakers() {
     }, [])
 
     return (
-    <section className="programme">
+    <section id='programme' className="programme">
         <div className="programme__container container">
             <h2 className="programme__title title">Программа<br />мероприятия</h2>
             <div className='programme__content timeline'>

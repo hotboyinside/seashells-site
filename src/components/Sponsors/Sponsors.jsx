@@ -2,7 +2,7 @@ import './Sponsors.css'
 
 export default function Sponsors() {
     return (
-        <section className="sponsors">
+        <section id="sponsors" className="sponsors">
             <div className="sponsors__container">
                 <div className='sponsors__wrapper'>
                     <div className="sponsors__running_string list-reset">

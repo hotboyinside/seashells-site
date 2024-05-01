@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player';
 export default function About() {
     const video_link = "../../assets/preview_video.mp4"
     return (
-        <section className="about">
+        <section id="about" className="about">
             <div className="about__container">
                 <div className="about__upper-content">
                     <div className="about__video">

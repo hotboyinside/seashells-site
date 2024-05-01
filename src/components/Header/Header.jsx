@@ -9,7 +9,7 @@ export default function Header() {
             <div className="container header__container">
                 <Nav />
                 <Logo />
-                <Button>Стать участником</Button>
+                <a className='btn btn-reset' href="#participant"><span className="btn__text">Cтать участником</span></a>
             </div>
         </header>
         
