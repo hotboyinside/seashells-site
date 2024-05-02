@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import api from '../../api';
+import { Popup } from '../Popup/Popup';
 
 import './Participant.css'
-import api from '../../api';
 
 export default function Participant() {
     const [formData, setFormData] = useState({
@@ -9,6 +10,8 @@ export default function Participant() {
         phone_number: "",
         description: ""
     })
+
+    const [modalInfoIsOpen, setModalInfoOpen] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -20,7 +23,7 @@ export default function Participant() {
         event.preventDefault()
         const {status} = await api.post('participants/', formData)
         if (status == 201) {
-            alert('Заявка успешно отправлена!')
+            setModalInfoOpen(true)
         }
     }
 
@@ -47,6 +50,17 @@ export default function Participant() {
                         </div>
                         <button onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className='btn-reset form__btn'>ОТПРАВИТЬ</button>
                     </form>
+                    <Popup
+                        isOpen={modalInfoIsOpen}
+                        onClose={() => setModalInfoOpen(false)}
+                    >
+                        <h3>Успешно!</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo,
+                            dolorum dolore vero eligendi cum iusto ea quam perspiciatis
+                            veritatis rem cupiditate a in, aliquam pariatur.
+                        </p>
+                    </Popup>
                 </div>
             </div>
         </section>
