@@ -1,7 +1,7 @@
 import "./Button.css"
 
-export default function Button({ children, mod }) {
+export default function Button({ linkPath, mod, children }) {
     return (
-        <button className={`btn btn-reset ${mod ? mod: ''}`}><span className="btn__text">{ children }</span></button>
+        <a href={linkPath} className={`btn btn-reset btn-link ${mod ? mod: ''}`}><span className="btn__text">{ children }</span></a>
     )
 }

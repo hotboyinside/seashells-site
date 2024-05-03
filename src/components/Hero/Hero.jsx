@@ -10,7 +10,7 @@ export default function Hero() {
                 <div className="hero__content">
                     <div className='hero__header-mobile'>
                         <Logo />
-                        <Button mod="btn--white-color">Стань участником</Button>
+                        <Button linkPath={'#participant'} mod="btn--white-color">Стань участником</Button>
                     </div>
                     <h1 className="title hero_title">Выставка-продажа морских раковин</h1>
                     <address className="hero_address">Санкт-Петербург, Невский проспект, д. 35</address>
