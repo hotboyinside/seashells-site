@@ -1,7 +1,7 @@
 .participant {
     padding-top: 80px;
     padding-bottom: 249px;
-    background-image: url('images/participant-background.jpg');
+    background-image: url('/images/participant-background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -37,7 +37,7 @@
     gap: 20px;
     padding: 53px 43px;
     background-color: transparent;
-    background-image: url('images/ticket-background.png');
+    background-image: url('/images/ticket-background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -88,7 +88,7 @@
     letter-spacing: 0.05em;
     color: #333;
     background-size: 100% 100%;
-    background-image: url('images/btn-background.png');
+    background-image: url('/images/btn-background.png');
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.3s ease-in-out;
@@ -110,13 +110,13 @@
 
 @media (max-width: 1200px) {
     .participant {
-        background-image: url('images/participant-background-1194.jpg');
+        background-image: url('/images/participant-background-1194.jpg');
     }
 }
 
 @media (max-width: 992px) {
     .participant {
-        background-image: url('images/participant-background-992.jpg');
+        background-image: url('/images/participant-background-992.jpg');
     }
 }
 
@@ -143,7 +143,7 @@
 
 @media (max-width: 576px) {
     .participant {
-        background-image: url('images/participant-background-992.jpg');
+        background-image: url('/images/participant-background-992.jpg');
     }
     
     .form__left {
@@ -158,7 +158,7 @@
 @media (max-width: 480px) {
     .participant {
         padding: 60px 0;
-        background-image: url('images/participant-background-mobile.jpg');
+        background-image: url('/images/participant-background-mobile.jpg');
     }
 
     .form {
