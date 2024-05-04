@@ -7,7 +7,7 @@
     grid-template-columns: 1fr 2fr 1fr;
     align-content: end;
     background-size: cover;
-    background-image: url('images/hero-background.jpg');
+    background-image: url('/images/hero-background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     padding: 230px 20px 20px 20px;
@@ -52,14 +52,14 @@
 @media (max-width: 1200px) {
     .hero__container {
         grid-template-columns: 1fr 4fr 1fr;
-        background-image: url('images/hero-background-1194.jpg');
+        background-image: url('/images/hero-background-1194.jpg');
     }
 }
 
 @media (max-width: 992px) {
     .hero__container {
         grid-template-columns: 1fr 8fr 1fr;
-        background-image: url('images/hero-background-992.jpg');
+        background-image: url('/images/hero-background-992.jpg');
     }
 }
 
@@ -72,7 +72,7 @@
 @media (max-width: 576px) {
     .hero__container {
         grid-template-columns: 1fr 16fr 1fr;
-        background-image: url('images/hero-background-578.jpg');
+        background-image: url('/images/hero-background-578.jpg');
     }
 }
 
@@ -84,7 +84,7 @@
     .hero__container {
         display: block;
         padding: 0;
-        background-image: url('images/hero-background-mobile.jpg');
+        background-image: url('/images/hero-background-mobile.jpg');
     }
 
     .hero__content {
