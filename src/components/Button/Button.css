@@ -5,6 +5,10 @@
     cursor: pointer;
   }
 
+.hidden {
+    opacity: 0;
+}
+
 .btn {
     min-width: 182px;
     position: relative;
@@ -40,7 +44,6 @@
     background-color: #F46244;
 }
 
-
 .btn:after {
     position: absolute;
     content: "";
@@ -61,11 +64,4 @@
     outline: none;
     background: none;
     background-color: #F46244;
-}
-
-
-@media (max-width: 1200px) {
-    .btn {
-        order: 2;
-    }
 }

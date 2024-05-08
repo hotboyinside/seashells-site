@@ -1,13 +1,3 @@
-.logo {
-    margin-right: auto;
-}
-
-@media (max-width: 1200px) {
-    .logo {
-        order: 0;
-    }
-}
-
 @media (max-width: 480px) {
     .logo {
         stroke: #fff;

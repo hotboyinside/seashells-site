@@ -1,0 +1,17 @@
+.burger {
+    display: none;
+}
+
+.burger_black {
+    fill: var(--color-black);
+}
+
+.burger_white {
+    fill: var(--color-white);
+}
+
+@media (max-width: 992px) {
+    .burger {
+        display: block;
+    }
+}

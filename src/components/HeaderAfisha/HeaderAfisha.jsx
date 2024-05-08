@@ -1,18 +1,19 @@
-import './Header.css'
-import Button from '../Button/Button'
-import Nav from '../Nav/Nav'
+import NavAfisha from '../NavAfisha/NavAfisha'
 import Logo from '../Logo/Logo'
-import Burger from '../Burger/Burger'
+import Button from '../Button/Button'
 import Language from '../Language/Language'
+import Burger from '../Burger/Burger'
+
+import './HeaderAfisha.css'
 
 export default function Header() {
     return (
         <header className="header">
             <div className="container header__container">
-                <Nav />
+                <NavAfisha />
                 <Logo />
                 <div className='headers__buttons'>
-                    <Button linkPath={'#participant'}>Стать участником</Button>
+                    <Button mod={'hidden'} linkPath={'#participant'}>Стать участником</Button>
                     <Language>RU</Language>
                 </div>
                 <Burger mod={'burger_black'} />

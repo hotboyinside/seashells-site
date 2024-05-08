@@ -1,0 +1,32 @@
+.hero-afisha {
+    padding-bottom: 20px;
+}
+
+.hero-afisha__image {
+    position: relative;
+}
+
+.hero-afisha__container {
+    padding: 132px 0;
+    background-image: url('/images/hero-afisha-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-afisha__title {
+    margin: 0;
+    font-weight: 300;
+    font-size: 88px;
+    line-height: 100%;
+    letter-spacing: 0.17em;
+    color: var(--color-white);
+}
+
+@media (max-width: 2500px) {
+    .hero-afisha__container {
+        background-image: url('/images/hero-afisha-background-2x.jpg');
+    }
+}

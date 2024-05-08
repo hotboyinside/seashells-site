@@ -1,6 +1,6 @@
 import './Hero.css'
 import Logo from '../Logo/Logo'
-import Button from '../Button/Button'
+import Burger from '../Burger/Burger'
 
 export default function Hero() {
     return (
@@ -10,7 +10,7 @@ export default function Hero() {
                 <div className="hero__content">
                     <div className='hero__header-mobile'>
                         <Logo />
-                        <Button linkPath={'#participant'} mod="btn--white-color">Стань участником</Button>
+                        <Burger mod="burger_white"/>
                     </div>
                     <h1 className="title hero_title">Выставка-продажа морских раковин</h1>
                     <address className="hero_address">Санкт-Петербург, Невский проспект, д. 35</address>

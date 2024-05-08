@@ -1,0 +1,82 @@
+.content-afisha {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.content-afisha__container {
+    max-width: 1142px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-afisha__buttons {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.content-afisha__btn-2 {
+    border: 1px solid var(--color-dark-font);
+    background: none;
+}
+
+.content-afisha__text {
+    z-index: 1;
+    position: relative;
+}
+
+.content-afisha__btn-2 .content-afisha__text {
+    color: var(--color-dark-font);
+}
+
+.content-afisha__items {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-wrap: wrap;
+    grid-template-rows: auto;
+    grid-template-columns: minmax(274px, 344px) minmax(274px, 344px) minmax(274px, 344px);
+    grid-auto-rows: auto;
+    grid-auto-columns: 1fr;
+    justify-content: space-between;
+}
+
+.content-afisha__item {
+    min-height: 440px;
+    padding: 20px 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color-blue);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.content-afisha__item:hover {
+    background-color: var(--color-active);
+}
+
+.content-afisha__item:hover .content-afisha__item-title {
+    color: var(--color-white);
+}
+
+.content-afisha__item:last-child {
+    justify-content: center;
+}
+
+.content-afisha__item:last-child .content-afisha__item-title {
+    margin: 0;
+}
+
+.content-afisha__item-title {
+    margin: 0;
+    margin-bottom: 87px;
+    text-align: center;
+    font-family: "KellySlab";
+    font-weight: 400;
+    font-size: 54px;
+    letter-spacing: 0.05em;
+    color: #333;
+    transition: color 0.3s ease-in-out;;
+}

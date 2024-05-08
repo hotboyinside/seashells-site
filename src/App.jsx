@@ -1,26 +1,18 @@
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
-import About from './components/About/About'
-import Items from './components/Items/Items'
-import ProgrammeSpeakers from './components/ProgrammeSpeakers/ProgrammeSpeakers'
-import Sponsors from './components/Sponsors/Sponsors'
-import Participant from './components/Participant/Participant'
+import { Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home/Home'
+import Afisha from './pages/Afisha/Afisha'
 import Footer from './components/Footer/Footer'
 import './App.css'
 
 export default function App() {
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Items />
-        <ProgrammeSpeakers />
-        <Sponsors />
-        <Participant />
-        <Footer />
-      </main>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/afisha' element={<Afisha />}></Route>
+      </Routes>
+      <Footer />
     </>
   )
 }
