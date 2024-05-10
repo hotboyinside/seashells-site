@@ -1,0 +1,123 @@
+.content-afisha__elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-afisha__elem {
+    border-top: 1px solid var(--background-color-blue);
+    padding: 8px 8px 32px 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-white);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.content-afisha__elem:hover {
+    background-color: var(--color-active);
+}
+
+.content-afisha__elem:hover .content-afisha__elem-title {
+    color: var(--color-white);
+}
+
+.content-afisha__elem:hover .content-afisha__address {
+    color: var(--color-white);
+}
+
+.content-afisha__elem:hover .content-afisha__date {
+    color: var(--color-white);
+}
+
+.content-afisha__elem-title {
+    min-width: 123px;
+    margin: 0;
+    font-family: "KellySlab";
+    text-align: left;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: var(--color-dark-font);
+    transition: color 0.3s ease-in-out;
+}
+
+.content-afisha__address {
+    min-width: 497px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: var(--color-dark-font);
+    transition: color 0.3s ease-in-out;
+}
+
+.content-afisha__date {
+    min-width: 139px;
+    text-align: end;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: var(--color-dark-font);
+    transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+    .content-afisha__elem-title {
+        font-size: 20px;
+    }
+
+    .content-afisha__address {
+        font-size: 20px;
+        min-width: auto;
+    }
+
+    .content-afisha__date {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-afisha__elem {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-afisha__elem-title {
+        min-width: 129px;
+        font-size: 17px;
+    }
+
+    .content-afisha__address {
+        font-size: 17px;
+    }
+
+    .content-afisha__date {
+        min-width: 129px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-afisha__elem {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .content-afisha__elem-title {
+        min-width: auto;
+    }
+
+    .content-afisha__address {
+        text-align: left;
+    }
+
+    .content-afisha__date {
+        min-width: auto;
+        font-size: 17px;
+    }
+}

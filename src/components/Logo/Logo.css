@@ -1,5 +1,5 @@
 @media (max-width: 480px) {
-    .logo {
+    .hero .logo {
         stroke: #fff;
     }
 }

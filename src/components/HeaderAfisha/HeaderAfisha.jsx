@@ -8,7 +8,7 @@ import './HeaderAfisha.css'
 
 export default function Header() {
     return (
-        <header className="header">
+        <header className="header-afisha">
             <div className="container header__container">
                 <NavAfisha />
                 <Logo />

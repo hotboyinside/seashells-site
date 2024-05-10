@@ -30,3 +30,37 @@
         background-image: url('/images/hero-afisha-background-2x.jpg');
     }
 }
+
+@media (max-width: 992px) {
+    .hero-afisha__container {
+        background-image: url('/images/hero-afisha-background-tablet.jpg');
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-afisha__title {
+        font-size: 62px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-afisha__container {
+        padding: 107px 0;
+        background-image: url('/images/hero-afisha-background-576.jpg');
+    }
+}
+
+@media (max-width: 481px) {
+    .hero-afisha__container {
+        padding: 59px 0;
+        background-image: url('/images/hero-afisha-background-mobile.jpg');
+    }
+
+    .hero-afisha__title {
+        font-size: 36px;
+    }
+
+    .hero-afisha {
+        padding-bottom: 15px;
+    }
+}

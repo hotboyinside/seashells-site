@@ -1,10 +1,15 @@
 .footer {
-    padding: 10px 0;
+    border-top: 1px solid var(--color-grey);
 }
 
-.footer__container {
+.footer__container-top {
     display: flex;
     align-items: center;
+}
+
+.footer__top {
+    padding: 10px 0;
+    background-color: var(--color-white);
 }
 
 .social {
@@ -60,7 +65,7 @@
     font-size: 17px;
     line-height: 150%;
     letter-spacing: 0.05em;
-    color: #333;
+    color: var(--color-dark-font);
     margin-right: 80px;
 }
 
@@ -70,8 +75,39 @@
     gap: 60px;
 }
 
-.mobile__container {
+.footer__bottom {
+    padding: 10px 0;
+    background-color: var(--color-dark-font);
+}
+
+.footer__container-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer__copyright {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+}
+
+.footer__policy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--color-white);
+}
+
+.footer__mobile {
     display: none;
+    margin-bottom: 60px;
 }
 
 .mobile__title {
@@ -81,11 +117,20 @@
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.05em;
-    color: #333;
+    color: var(--color-dark-font);
+}
+
+.mobile__link {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: var(--color-dark-font);
 }
 
 @media (max-width: 992px) {
-    .footer__container {
+    .footer__top {
         gap: 20px;
     }
 
@@ -102,25 +147,45 @@
     .footer__question {
         display: none;
     }
+
+    .footer__container-bottom {
+        justify-content: center;
+        gap: 10px;
+    }
 }
 
 @media (max-width: 576px) {
     .footer__buttons {
         gap: 20px
     }
+
+    .footer__container-bottom {
+        gap: 2px;
+    }
 }
 
 @media (max-width: 480px) {
     .footer {
-        padding: 60px 0;
+        padding-top: 60px;
+        padding-bottom: 20px;
         background-color: var(--background-color-blue);
     }
 
-    .footer__container {
+    .footer__top {
         display: none;
     }
     
-    .mobile__container {
+    .footer__mobile {
         display: block;
+    }
+
+    .footer__policy {
+        text-align: center;
+        letter-spacing: normal;
+    }
+
+    .footer__copyright {
+        text-align: center;
+        letter-spacing: normal;
     }
 }

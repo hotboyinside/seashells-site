@@ -44,7 +44,7 @@
 .share__top {
     display: flex;
     align-items: flex-end;
-    gap: 16px;
+    gap: 15px;
     margin-bottom: 8px;
 }
 
@@ -63,10 +63,9 @@
 }
 
 .share__input {
-    width: 100%;
+    max-width: 280px;
     flex-basis: 45%;
     border: none;
-    border-radius: 4px;
     padding: 12px 16px;
     background-color: #F3F5F4;
 }
@@ -91,6 +90,7 @@
 }
 
 .share__desc {
+    max-width: 549px;
     margin: 0;
     font-weight: 400;
     font-size: 14px;
@@ -101,4 +101,69 @@
 
 .share__desc_underline {
     text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .share__container {
+        padding: 34px 45px;
+        gap: 40px;
+    }
+
+    .share__left {
+        flex-basis: 40%;
+    }
+
+    .share__right {
+        flex-basis: 55%;
+    }
+}
+
+@media (max-width: 992px) {
+    .share__container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .share__top {
+        min-width: 613px;
+    }
+    
+    .share__left {
+        flex-basis: auto;
+    }
+
+    .share__right {
+        flex-basis: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .share__container {
+        justify-content: flex-start;
+    }
+
+    .share__top {
+        min-width: auto;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 481px) {
+    .share {
+        padding-top: 30px;
+    }
+
+    .share__container {
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .share__top {
+        margin-bottom: 10px;
+    }
+
+    .share__section-title {
+        font-size: 20px;
+    }
 }

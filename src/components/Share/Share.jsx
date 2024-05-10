@@ -6,7 +6,7 @@ export default function Share() {
             <div className="share__container">
                 <div className="share__left">
                     <h4 className="share__sub-title">актуально</h4>
-                    <h2 className="share__section-title">Получайте актуальные новости о выставках</h2>
+                    <h2 className="share__section-title">Получайте актуальные новости о&nbsp;выставках</h2>
                 </div>
                 <div className="share__right">
                     <div className="share__top">

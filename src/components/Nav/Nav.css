@@ -1,5 +1,6 @@
 .nav {
     align-content: flex-start;
+    padding-right: 53px;
 }
 
 .nav__items {
