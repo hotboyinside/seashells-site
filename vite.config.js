@@ -11,8 +11,10 @@ export default defineConfig({
   build: {
     outDir,
     rollupOptions: {
-      main: resolve(root, 'pages', 'Home', 'index.html'),
-      afisha: resolve(root, 'pages', 'Afisha', 'index.html')
+      input: {
+        main: resolve(root, 'pages', 'Home', 'index.html'),
+        afisha: resolve(root, 'pages', 'Afisha', 'index.html')
+      }
     }
   }
 })
