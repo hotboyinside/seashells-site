@@ -15,3 +15,57 @@
         display: block;
     }
 }
+
+.burger__icon {
+    z-index: 11;
+    width: 30px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+
+.burger__icon span, .burger__icon::after, .burger__icon::before {
+    height: 3px;
+    width: 100%;
+    background-color: #1f1f1f;
+    position: absolute;
+    left: 0;
+    transition: all .3s ease 0s;
+}
+
+.burger__icon::after, .burger__icon::before {
+    content: '';
+}
+
+.burger__icon span {
+    top: calc(50% - 1px);
+}
+
+.burger__icon::after {
+    top: 0;
+}
+
+.burger__icon::before {
+    bottom: 0;
+}
+ 
+.burger__icon.active span{
+    transform: rotate(-45deg);
+}
+
+.burger__icon.active::after {
+    transform: rotate(45deg);
+    top: calc(50% - 1px);
+}
+
+
+.burger__icon.active::before {
+    width: 0px;
+}
+
+@media (max-width: 992px) {
+    .burger__icon {
+        display: block;
+    }
+}

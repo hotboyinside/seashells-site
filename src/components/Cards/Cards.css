@@ -9,7 +9,7 @@
     flex-direction: column;
     width: calc(100% - var(--cards-count) * 4px / var(--cards-count));
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--color-white);
     transition: all 0.3s ease-in-out;
 }
 
@@ -23,7 +23,7 @@
     font-size: 17px;
     line-height: 150%;
     letter-spacing: 0.05em;
-    color: #333;
+    color: var(--color-dark-font);
     transition: color 0.3s ease-in-out;
 }
 
