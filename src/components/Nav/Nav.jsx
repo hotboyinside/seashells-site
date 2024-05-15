@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import './Nav.css'
 
 export default function Nav ({mod}) {
@@ -13,7 +15,7 @@ export default function Nav ({mod}) {
                         <li className='dropdown__item'><a className='dropdown__link' href="/#sponsors">Спонсоры</a></li>
                     </ul>
                 </li>
-                <li className="nav__item"><a className='nav__link' href="/afisha">Афиша</a></li>
+                <li className="nav__item"><Link to="/afisha" className='nav__link'>Афиша</Link></li>
             </ul>
         </nav>
     )
