@@ -13,7 +13,7 @@ export default function Hero() {
                         <Burger mod="burger_white"/>
                     </div>
                     <h1 className="title hero_title">Выставка-продажа морских раковин</h1>
-                    <address className="hero_address">Санкт-Петербург, Невский проспект, д. 35</address>
+                    <address className="hero_address">Санкт-Петербург, Невский проспект,&nbsp;д.&nbsp;35</address>
                     <p className="hero__date">10 июля 2024, 10:00</p>
                 </div>
                 <div className='hero__blank-block'></div>

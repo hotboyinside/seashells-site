@@ -2,6 +2,7 @@
     width: 100%;
     padding: 80px 0;
     overflow: hidden;
+    background-color: var(--color-white);
 }
 
 .sponsors__container {

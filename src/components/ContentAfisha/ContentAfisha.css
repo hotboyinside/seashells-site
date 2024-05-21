@@ -1,6 +1,7 @@
 .content-afisha {
     padding-top: 20px;
     padding-bottom: 50px;
+    background-color: var(--color-white);
 }
 
 .content-afisha__container {

@@ -1,5 +1,6 @@
 .items {
     padding: 160px 0;
+    background-color: var(--color-white);
 }
 
 .items__container {
@@ -15,7 +16,7 @@
     font-size: 88px;
     line-height: 100%;
     letter-spacing: 0.17em;
-    color: #333;
+    color: var(--color-dark-font);
 }
 
 @media (max-width: 1200px) {

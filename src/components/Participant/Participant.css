@@ -12,7 +12,7 @@
     margin-bottom: 5px;
     font-size: 42px;
     line-height: 150%;
-    color: #333;
+    color: var(--color-dark-font);
 }
 
 .participant__desc {
@@ -22,7 +22,7 @@
     font-size: 17px;
     line-height: 150%;
     letter-spacing: 0.05em;
-    color: #333;
+    color: var(--color-dark-font);
 }
 
 .form {
@@ -54,12 +54,8 @@
     font-size: 17px;
     line-height: 150%;
     letter-spacing: 0.05em;
-    color: #fff;
+    color: var(--color-white);
     transition: border-color 0.3s ease-in-out;
-}
-
-.form__input:hover {
-    border-color: #fff;
 }
 
 .form__input::placeholder {
@@ -67,16 +63,24 @@
     transition: color 0.3s ease-in-out;
 }
 
+.form__input:focus::placeholder{
+    color: var(--color-white);
+}
+
+.form__input:hover {
+    border-color: var(--color-white);
+}
+
 .form__input:hover::placeholder{
-    color: #fff;
+    color: var(--color-white);
 }
 
 .form__input:active {
-    border-color: #fff;
+    border-color: var(--color-white);
 }
 
 .form__input:active::placeholder{
-    color: #fff;
+    color: var(--color-white);
 }
 
 .form__btn {
@@ -86,7 +90,7 @@
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.05em;
-    color: #333;
+    color: var(--color-dark-font);
     background-size: 100% 100%;
     background-image: url('/images/btn-background.png');
     background-position: center;
@@ -173,8 +177,12 @@
 
     .form__btn {
         background-image: none;
-        background-color: #fff;
+        background-color: var(--color-white);
         padding: 15px;
         transform: translateX(0);
+    }
+
+    .participant__desc {
+        font-size: 14px;
     }
 }

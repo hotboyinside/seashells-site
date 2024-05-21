@@ -1,5 +1,13 @@
+.logo:focus {
+    outline: none;
+}
+
+.logo:focus {
+    outline: 1px solid var(--color-active);
+}
+
 @media (max-width: 480px) {
-    .hero .logo {
+    .hero .logo-icon {
         stroke: #fff;
     }
 }

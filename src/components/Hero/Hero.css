@@ -10,6 +10,7 @@
     background-image: url('/images/hero-background.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    background-color: var(--color-black);
     padding: 230px 20px 20px 20px;
 }
 
@@ -26,7 +27,7 @@
     text-align: center;
     font-size: 51px;
     line-height: 135%;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .hero_address {
@@ -35,7 +36,7 @@
     line-height: 150%;
     letter-spacing: 0.05em;
     text-align: center;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .hero__date {
@@ -46,7 +47,7 @@
     line-height: 150%;
     letter-spacing: 0.05em;
     text-align: center;
-    color: #fff;
+    color: var(--color-white);
 }
 
 @media (max-width: 1200px) {

@@ -2,6 +2,7 @@
     max-width: 1142px;
     padding: 50px 15px;
     margin: 0 auto;
+    background-color: var(--color-white);
 }
 
 .share__container {
@@ -12,6 +13,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 61px;
+    background-color: var(--color-white);
 }
 
 .share__left {
@@ -68,6 +70,32 @@
     border: none;
     padding: 12px 16px;
     background-color: #F3F5F4;
+    color: var(--color-dark-font);
+}
+
+.share__input::placeholder {
+    color: #666666;
+    transition: color 0.3s ease-in-out;
+}
+
+.share__input:focus {
+    outline: 1px solid var(--color-active);
+}
+
+.share__input:focus::placeholder {
+    color: var(--color-dark-font);
+}
+
+.share__input:hover {
+    outline: none;
+}
+
+.share__input:hover::placeholder {
+    color: var(--color-dark-font)
+}
+
+.share__input:active::placeholder {
+    color: var(--color-dark-font);
 }
 
 .share__input::placeholder {
@@ -101,6 +129,21 @@
 
 .share__desc_underline {
     text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+.share__desc_underline:focus {
+    outline: none;
+    color: var(--color-active);
+}
+
+.share__desc_underline:hover {
+    outline: none;
+    color: var(--color-active);
+}
+
+.share__desc_underline:active {
+    color: var(--color-active);
 }
 
 @media (max-width: 1200px) {

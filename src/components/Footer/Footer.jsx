@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Button from '../Button/Button'
 import NavAfisha from '../NavAfisha/NavAfisha'
 import './Footer.css'
@@ -54,7 +55,7 @@ export default function Footer() {
                         </li>
                         <li className='social__item'>
                             <a href="https://t.me/+Ihq2j9U7J7QxYTJi" className="social__link">
-                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg className="social__icon telegram" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="33" height="33" rx="5.70302" fill="#333333"/>
                                     <path d="M9.18066 15.9156C9.18066 15.9156 15.8944 13.0878 18.2228 12.0921C19.1155 11.6939 22.1424 10.4194 22.1424 10.4194C22.1424 10.4194 23.5396 9.86182 23.4231 11.2159C23.3843 11.7735 23.0738 13.725 22.7634 15.8359C22.2977 18.823 21.7932 22.0888 21.7932 22.0888C21.7932 22.0888 21.7156 23.0049 21.0558 23.1642C20.3961 23.3235 19.3095 22.6066 19.1155 22.4473C18.9602 22.3278 16.2049 20.5355 15.1959 19.6593C14.9242 19.4204 14.6138 18.9425 15.2346 18.3849C16.6317 17.0706 18.3005 15.4377 19.3095 14.4022C19.7752 13.9242 20.2408 12.809 18.3005 14.1631C15.5451 16.1147 12.8286 17.9468 12.8286 17.9468C12.8286 17.9468 12.2077 18.345 11.0434 17.9866C9.87916 17.6282 8.52089 17.1502 8.52089 17.1502C8.52089 17.1502 7.58955 16.5528 9.18066 15.9156Z" fill="white"/>
                                 </svg>
@@ -66,7 +67,7 @@ export default function Footer() {
             <div className="footer__bottom">
                 <div className="container footer__container-bottom">
                     <span className='footer__copyright'>© Оформление сайта. Русов Павел, 2024</span>
-                    <span className='footer__policy'>Политика обработки персональных данных</span>
+                    <Link className='footer__link' to="/policy"><span className='footer__policy'>Политика обработки персональных данных</span></Link>
                 </div>
             </div>
         </footer>
