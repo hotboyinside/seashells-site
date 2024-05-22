@@ -6,18 +6,25 @@ import ProgrammeSpeakers from '../../components/ProgrammeSpeakers/ProgrammeSpeak
 import Sponsors from '../../components/Sponsors/Sponsors'
 import Participant from '../../components/Participant/Participant'
 
+import AfishaContext from '../../context/AfishaContext'
+
+import { useState } from 'react'
+
 export default function Home() {
+  const [ burgerState, setBurgerState ] = useState(false)
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Items />
-        <ProgrammeSpeakers />
-        <Sponsors />
-        <Participant />
-      </main>
+      <AfishaContext.Provider value={{burgerState, setBurgerState}}>
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Items />
+          <ProgrammeSpeakers />
+          <Sponsors />
+          <Participant />
+        </main>
+      </AfishaContext.Provider>
     </>
   )
 }

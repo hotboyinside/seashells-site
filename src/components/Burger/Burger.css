@@ -10,12 +10,6 @@
     fill: var(--color-white);
 }
 
-@media (max-width: 992px) {
-    .burger {
-        display: block;
-    }
-}
-
 .burger__icon {
     z-index: 11;
     width: 30px;
@@ -59,12 +53,15 @@
     top: calc(50% - 1px);
 }
 
-
 .burger__icon.active::before {
     width: 0px;
 }
 
 @media (max-width: 992px) {
+    .burger {
+        display: block;
+    }
+
     .burger__icon {
         display: block;
     }
