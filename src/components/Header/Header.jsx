@@ -1,5 +1,7 @@
 import { useContext } from 'react'
 
+import { useTranslation } from "react-i18next";
+
 import Button from '../Button/Button'
 import Nav from '../Nav/Nav'
 import Logo from '../Logo/Logo'
@@ -11,6 +13,9 @@ import AfishaContext from '../../context/AfishaContext'
 import './Header.css'
 
 export default function Header() {
+
+    const { t } = useTranslation();
+
     const value = useContext(AfishaContext);
     value.burgerState ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
 
@@ -20,10 +25,10 @@ export default function Header() {
                 <Nav />
                 <Logo />
                 <div className='headers__buttons'>
-                    <Button linkPath={'#participant'}>Стать участником</Button>
+                    <Button linkPath={'#participant'}>{t('becomeParticipant')}</Button>
                     <Language>RU</Language>
                 </div>
-                <Burger mod={'burger_black'} />
+                <Burger />
             </div>
         </header>
         

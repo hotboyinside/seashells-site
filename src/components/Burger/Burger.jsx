@@ -5,7 +5,7 @@ import "./Burger.css"
 
 import AfishaContext from '../../context/AfishaContext'
 
-export default function Burger({mod}) {
+export default function Burger() {
     
     const value = useContext(AfishaContext)
 

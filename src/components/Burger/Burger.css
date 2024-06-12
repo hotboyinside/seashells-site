@@ -66,3 +66,9 @@
         display: block;
     }
 }
+
+@media (max-width: 480px) {
+    .hero__content .burger__icon::after, .hero__content .burger__icon span,  .hero__content .burger__icon::before {
+        background-color: var(--color-white);
+    }
+}

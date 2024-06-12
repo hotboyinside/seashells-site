@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { itemsCard, persons } from '../../data';
 import ItemCard from '../ItemCard/ItemCard';
 
+import { useTranslation } from "react-i18next";
+
 import 'swiper/css';
 import './Slider.css'
 
@@ -9,12 +11,15 @@ import './Slider.css'
 import { EffectCoverflow, Navigation } from 'swiper/modules';
 
 export default function Slider(props) {
-    let content
-    if (props.type == 'items') {
-        content = itemsCard.map(item => <SwiperSlide key={item.title}><ItemCard {...item}/></SwiperSlide>)
-    } else {
-        content = persons.map(item => <SwiperSlide key={item.title}><ItemCard {...item}/></SwiperSlide>)
-    }
+
+    const { t } = useTranslation();
+    const items = props.type === 'items' ? t('items', { returnObjects: true }) : t('persons', { returnObjects: true });
+    
+    const content = items.map(item => (
+        <SwiperSlide key={item.title}>
+            <ItemCard {...item} />
+        </SwiperSlide>
+    ));
 
     return (
         <div className="slider">

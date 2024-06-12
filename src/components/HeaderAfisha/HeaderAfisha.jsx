@@ -1,3 +1,7 @@
+import { useTranslation } from "react-i18next";
+
+import { useContext } from 'react'
+
 import NavAfisha from '../NavAfisha/NavAfisha'
 import AfishaContext from '../../context/AfishaContext'
 import Logo from '../Logo/Logo'
@@ -6,10 +10,11 @@ import Language from '../Language/Language'
 import Burger from '../Burger/Burger'
 
 import './HeaderAfisha.css'
-import { useContext, useState } from 'react'
-import { Link } from 'react-router-dom'
 
 export default function HeaderAfisha() {
+
+    const { t } = useTranslation();
+
     const value = useContext(AfishaContext);
     value.burgerState ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
 
@@ -19,10 +24,10 @@ export default function HeaderAfisha() {
                 <NavAfisha />
                 <Logo />
                 <div className='headers__buttons'>
-                    <Button mod={'hidden'} linkPath={'#participant'}>Стать участником</Button>
+                    <Button mod={'hidden'} linkPath={'#participant'}>{t('becomeParticipant')}</Button>
                     <Language>RU</Language>
                 </div>
-                <Burger mod={'burger_black'} />
+                <Burger />
             </div>
         </header>
         

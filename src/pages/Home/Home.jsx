@@ -11,7 +11,8 @@ import AfishaContext from '../../context/AfishaContext'
 import { useState } from 'react'
 
 export default function Home() {
-  const [ burgerState, setBurgerState ] = useState(false)
+  const [ burgerState, setBurgerState ] = useState(false);
+
   return (
     <>
       <AfishaContext.Provider value={{burgerState, setBurgerState}}>

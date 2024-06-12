@@ -1,9 +1,15 @@
 import Cards from "../Cards/Cards"
-import './About.css'
+
 import ReactPlayer from 'react-player';
 
+import { useTranslation } from "react-i18next";
+
+import './About.css'
+
 export default function About() {
-    const video_link = "../../assets/preview_video.mp4"
+
+    const { t } = useTranslation();
+
     return (
         <section id="about" className="about">
             <div className="about__container">
@@ -18,14 +24,14 @@ export default function About() {
                         />
                     </div>
                     <div className="about__desc">
-                        <h2 className="about__title title">О выставке</h2>
+                        <h2 className="about__title title">{t('about')}</h2>
                         <p className="about__text">
-                            <span className="about__text--bg">Первая уникальная выставка морских раковин в&nbsp;России.</span> Коллекционеры со&nbsp;всей страны расскажут о&nbsp;своем увлечении и&nbsp;продемонстрируют коллекции.<span className="about__text--desktop"> На&nbsp;выставке вы&nbsp;увидите лучшие морские раковины и&nbsp;сможете их&nbsp;приобрести, познакомитесь с&nbsp;гуру-своего дела и&nbsp;узнаете много нового. Ждем вас! Вход свободный для всех желающих.</span>
+                            <span className="about__text--bg">{t('exhibitionInformation1')}</span>{t('exhibitionInformation2')}<span className="about__text--desktop">{t('exhibitionInformation3')}</span>
                         </p>
                     </div>
                 </div>
                 <div className="about__bottom-content">
-                    <p className="about__text--mobile">На&nbsp;выставке вы&nbsp;увидите лучшие морские раковины и&nbsp;сможете их приобрести, познакомитесь с&nbsp;гуру-своего дела и&nbsp;узнаете много нового. Ждем вас!</p>
+                    <p className="about__text--mobile">{t('exhibitionInformation3')}</p>
                     <Cards />
                 </div>
             </div>

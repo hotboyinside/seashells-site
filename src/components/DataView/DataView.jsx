@@ -1,47 +1,52 @@
+import { useTranslation } from "react-i18next";
+
 import './DataView.css'
 
 export default function PostersView() {
+
+    const { t } = useTranslation();
+
     return (
         <ul className="content-afisha__elements list-reset">
             <li className="content-afisha__elem">
-                <h3 className="content-afisha__elem-title">МУРЕКС</h3>
-                <address className='content-afisha__address'>Москва, МВЦ “Крокус Экспо”</address>
-                <time className='content-afisha__date'>11/09/2024</time>
+                <h3 className="content-afisha__elem-title">{t('posterName1')}</h3>
+                <address className='content-afisha__address'>{t('posterAddress1')}</address>
+                <time className='content-afisha__date'>{t('posterDate1')}</time>
             </li>
             <li className="content-afisha__elem">
-                <h3 className="content-afisha__elem-title">СИЯНИЕ</h3>
-                <address className='content-afisha__address'>Екатеринбург, ул.&nbsp;Высоцкого,&nbsp;14</address>
-                <time className='content-afisha__date'>17/09/2024</time>
+                <h3 className="content-afisha__elem-title">{t('posterName2')}</h3>
+                <address className='content-afisha__address'>{t('posterAddress2')}</address>
+                <time className='content-afisha__date'>{t('posterDate2')}</time>
             </li>
             <li className="content-afisha__elem">
-                <h3 className="content-afisha__elem-title">ВОЛЮТА</h3>
-                <address className='content-afisha__address'>Санкт-Петербург, 29-я линия В.О.,&nbsp;2</address>
-                <time className='content-afisha__date'>28/09/2024</time>
+                <h3 className="content-afisha__elem-title">{t('posterName3')}</h3>
+                <address className='content-afisha__address'>{t('posterAddress3')}</address>
+                <time className='content-afisha__date'>{t('posterDate3')}</time>
             </li>
             <li className="content-afisha__elem">
-                <h3 className="content-afisha__elem-title">КОЛЮЧКА</h3>
-                <address className='content-afisha__address'>Москва, арт-галерея VEKARTA</address>
-                <time className='content-afisha__date'>04/10/2024</time>
+                <h3 className="content-afisha__elem-title">{t('posterName4')}</h3>
+                <address className='content-afisha__address'>{t('posterAddress4')}</address>
+                <time className='content-afisha__date'>{t('posterDate4')}</time>
             </li>
             <li className="content-afisha__elem">
-                <h3 className="content-afisha__elem-title">УЛИТКА</h3>
-                <address className='content-afisha__address'>Санкт-Петербург, “Лофт Проект Этажи”</address>
-                <time className='content-afisha__date'>27/10/2024</time>
+                <h3 className="content-afisha__elem-title">{t('posterName5')}</h3>
+                <address className='content-afisha__address'>{t('posterAddress5')}</address>
+                <time className='content-afisha__date'>{t('posterDate5')}</time>
             </li>
             <li className="content-afisha__elem">
-                <h3 className="content-afisha__elem-title">НАУТИЛУС</h3>
-                <address className='content-afisha__address'>Новосибирск, Лофт-парк “Подземка”</address>
-                <time className='content-afisha__date'>02/11/2024</time>
+                <h3 className="content-afisha__elem-title">{t('posterName6')}</h3>
+                <address className='content-afisha__address'>{t('posterAddress6')}</address>
+                <time className='content-afisha__date'>{t('posterDate6')}</time>
             </li>
             <li className="content-afisha__elem">
-                <h3 className="content-afisha__elem-title">ЦИПРЕЯ</h3>
-                <address className='content-afisha__address'>Калининград , ВЦ&nbsp;“Балтик-&nbsp;Экспо”</address>
-                <time className='content-afisha__date'>н/д</time>
+                <h3 className="content-afisha__elem-title">{t('posterName7')}</h3>
+                <address className='content-afisha__address'>{t('posterAddress7')}</address>
+                <time className='content-afisha__date'>{t('posterDate7')}</time>
             </li>
             <li className="content-afisha__elem">
-                <h3 className="content-afisha__elem-title">КОНУС</h3>
-                <address className='content-afisha__address'>Казань, МВЦ “Казань Экспо”</address>
-                <time className='content-afisha__date'>н/д</time>
+                <h3 className="content-afisha__elem-title">{t('posterName8')}</h3>
+                <address className='content-afisha__address'>{t('posterAddress8')}</address>
+                <time className='content-afisha__date'>{t('posterDate8')}</time>
             </li>
         </ul>
     )

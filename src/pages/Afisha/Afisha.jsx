@@ -8,7 +8,7 @@ import Share from '../../components/Share/Share'
 
 
 export default function Afisha() {
-    const [ burgerState, setBurgerState ] = useState(false)
+    const [ burgerState, setBurgerState ] = useState(false);
 
     return (
         <>  

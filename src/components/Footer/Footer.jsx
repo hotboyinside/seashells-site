@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom'
+
+import { useTranslation } from "react-i18next";
+
 import Button from '../Button/Button'
 import NavAfisha from '../NavAfisha/NavAfisha'
+
 import './Footer.css'
 
 export default function Footer() {
+
+    const { t } = useTranslation();
+
     return(
         <footer className='footer'>
             <div className="footer__top">
@@ -25,16 +32,16 @@ export default function Footer() {
                             </a>
                         </li>
                     </ul>
-                    <span className='footer__question'>Есть вопросы?</span>
+                    <span className='footer__question'>{t('questions')}</span>
                     <div className='footer__buttons'>
-                        <Button linkPath={'mailto:rusov_pavel2002@mail.ru'}>Почта</Button>
-                        <Button linkPath={'https://t.me/+Ihq2j9U7J7QxYTJi'}>Телеграмм-чат</Button>
+                        <Button linkPath={'mailto:rusov_pavel2002@mail.ru'}>{t('btnEmail')}</Button>
+                        <Button linkPath={'https://t.me/+Ihq2j9U7J7QxYTJi'}>{t('btnTelegram')}</Button>
                     </div>
                 </div>
             </div>
             <div className="footer__mobile mobile">
                 <div className="container mobile__container">
-                    <h3 className='mobile__title'>Вход свободный!</h3>
+                    <h3 className='mobile__title'>{t('mobileFooterTitle')}</h3>
                     <NavAfisha />
                     <a href='mailto:rusov_pavel2002@mail.ru' className='mobile__link'>rusov_pavel2002@mail.ru</a>
                     <ul className="footer__social social list-reset">
@@ -66,8 +73,8 @@ export default function Footer() {
             </div>
             <div className="footer__bottom">
                 <div className="container footer__container-bottom">
-                    <span className='footer__copyright'>© Оформление сайта. Русов Павел, 2024</span>
-                    <Link className='footer__link' to="/policy"><span className='footer__policy'>Политика обработки персональных данных</span></Link>
+                    <span className='footer__copyright'>{t('security')}</span>
+                    <Link className='footer__link' to="/policy"><span className='footer__policy'>{t('policy')}</span></Link>
                 </div>
             </div>
         </footer>
