@@ -5,7 +5,7 @@
     "program": "Program",
     "sponsors": "Sponsors",
     "afisha": "Afisha",
-    "becomeParticipant": "Become a member",
+    "becomeParticipant": "Join with us",
     "exhibitionAndSale": "Exhibition and sale of seashells",
     "address": "35, Nevsky Prospekt, St. Petersburg",
     "time": "10 a.m. July 10, 2024",
@@ -197,6 +197,7 @@
     "conclusion2": "8.2. This document will reflect any changes to the Operator's personal data processing policy. The policy is valid indefinitely until it is replaced by a new version.",
     "conclusion3": "8.3. The current version of the Policy is freely available on the Internet at https://83.166.238.188/privacy .",
     "modalDesc": "Your application has been accepted. We will contact you soon.",
+    "modalDesc2": "Successfully! Now you will receive news about new exhibitions.",
     "btnText": "Clear"
 }
 
