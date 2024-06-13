@@ -1,17 +1,38 @@
 import { Link } from 'react-router-dom';
+
 import { useContext } from "react";
 
-import "./Burger.css"
+import { useTranslation } from "react-i18next";
 
 import AfishaContext from '../../context/AfishaContext'
 
+import { useLocalStorage } from "../../context/LocalStorage";
+
+import i18n from "../../../i18n";
+
+import "./Burger.css"
+
 export default function Burger() {
+
+    const [language, setLanguage] = useLocalStorage('language', 'ru');
+
+    const languageHandlerRU = () => {
+        i18n.changeLanguage('ru');
+        setLanguage('ru');
+    }
+
+    const languageHandlerEN = () => {
+        i18n.changeLanguage('en');
+        setLanguage('en');
+    }
+
+    const { t } = useTranslation();
     
     const value = useContext(AfishaContext)
 
     const handlerBurger = (e) => {
-        value.setBurgerState(!value.burgerState)
-        e.currentTarget.classList.toggle('active')
+        value.setBurgerState(!value.burgerState);
+        e.currentTarget.classList.toggle('active');
     };
 
     return (
@@ -25,15 +46,15 @@ export default function Burger() {
                     </svg>
                     <ul className="nav-overlay__items">
                         <li className='nav-overlay__item'>
-                            <Link to='/'>Выставка</Link>
+                            <Link to='/'>{t('exhibition')}</Link>
                         </li>
                         <li className='nav-overlay__item'>
-                            <Link to='/afisha'>Афиша</Link>
+                            <Link to='/afisha'>{t('afisha')}</Link>
                         </li>
                     </ul>
                     <div className='nav-overlay__buttons'>
-                        <button className='btn-reset nav-overlay__btn'>Русский</button>
-                        <button className='btn-reset nav-overlay__btn'>English</button>
+                        <button className='btn-reset nav-overlay__btn' onClick={languageHandlerRU}>Русский</button>
+                        <button className='btn-reset nav-overlay__btn' onClick={languageHandlerEN}>English</button>
                     </div>
                 </div>
         </div>

@@ -3,9 +3,11 @@ import i18n from "../../../i18n";
 
 import './Language.css'
 
-export default function Language({children}) {
+export default function Language() {
 
     const [language, setLanguage] = useLocalStorage('language', 'ru');
+
+    let innerBtnText = language === 'ru' ? 'EN' : 'RU';
 
     const languageHandler = () => {
         if (language === 'en') {
@@ -18,6 +20,6 @@ export default function Language({children}) {
     }
 
     return (
-        <a className='btn-reset language' onClick={languageHandler}>{ children }</a>
+        <a className='btn-reset language' onClick={languageHandler}>{innerBtnText}</a>
     )
 }

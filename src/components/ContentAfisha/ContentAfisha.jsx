@@ -19,15 +19,15 @@ export default function HeroAfisha() {
     const handlePostersViewAdd = () => {
         setPostersView(true);
         setDataView(false);
-        setLeftBtnIsActive(true)
-        setRightBtnIsActive(false)
+        setLeftBtnIsActive(true);
+        setRightBtnIsActive(false);
     }
 
     const handleDataViewAdd = () => {
         setPostersView(false);
         setDataView(true);
-        setLeftBtnIsActive(false)
-        setRightBtnIsActive(true)
+        setLeftBtnIsActive(false);
+        setRightBtnIsActive(true);
     }
 
     return (

@@ -25,7 +25,7 @@ export default function HeaderAfisha() {
                 <Logo />
                 <div className='headers__buttons'>
                     <Button mod={'hidden'} linkPath={'#participant'}>{t('becomeParticipant')}</Button>
-                    <Language>RU</Language>
+                    <Language></Language>
                 </div>
                 <Burger />
             </div>

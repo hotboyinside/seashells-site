@@ -26,7 +26,7 @@ export default function Header() {
                 <Logo />
                 <div className='headers__buttons'>
                     <Button linkPath={'#participant'}>{t('becomeParticipant')}</Button>
-                    <Language>RU</Language>
+                    <Language></Language>
                 </div>
                 <Burger />
             </div>

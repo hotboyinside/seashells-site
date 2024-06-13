@@ -32,6 +32,8 @@
 }
 
 .content-afisha__text {
+    display: inline-block;
+    min-width: 97px;
     z-index: 1;
     position: relative;
     color: var(--color-dark-font);
