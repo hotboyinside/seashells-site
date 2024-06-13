@@ -28,7 +28,7 @@ export default function Share() {
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         try {
-            const {status} = await api.post('https://backend-ng6w.onrender.com/subscribes/', formData);
+            const {status} = await api.post('https://backend-ng6w.onrender.com/api/v1/subscribers/', formData);
             if (status == 201) {
                 setIsOpen(true);
             }

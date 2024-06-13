@@ -25,7 +25,7 @@ export default function Participant() {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault()
-        const {status} = await api.post('https://backend-ng6w.onrender.com/participants/', formData)
+        const {status} = await api.post('https://backend-ng6w.onrender.com/api/v1/participants/', formData)
         if (status == 201) {
             setIsOpen(true)
         }
