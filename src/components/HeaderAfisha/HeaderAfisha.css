@@ -1,6 +1,7 @@
 .header-afisha {
     padding: 10px 0;
     border-bottom: 1px solid var(--color-grey);
+    background-color: var(--color-white);
 }
 
 .nav-overlay {

@@ -1,8 +1,10 @@
 .modal {
+    position: fixed;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     background-color: white;
     border-width: 0;
     padding: 0;
+    transform: translateY(-100%);
 }
   
 .modal[open] {
@@ -46,21 +48,21 @@
 @keyframes show {
     from {
       opacity: 0;
-      transform: translateY(-125%);
+      transform: translateY(-100%);
     }
     to {
       opacity: 1;
-      transform: translateY(0%);
+      transform: translateY(0);
     }
 }
   
 @keyframes hide {
     from {
         opacity: 1;
-        transform: translateY(0%);
+        transform: translateY(0);
     }
     to {
         opacity: 0;
-        transform: translateY(-125%);
+        transform: translateY(-100%);
     }
 }
