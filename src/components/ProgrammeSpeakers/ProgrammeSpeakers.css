@@ -75,7 +75,7 @@
 
 .timeline__desc {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.05em;
     color: #333;
@@ -188,6 +188,12 @@
 
   .speakers__slider {
     display: none;
+  }
+
+  @media (max-width: 1600px) {
+    .timeline__desc {
+      font-size: 17px;
+    }
   }
   
   

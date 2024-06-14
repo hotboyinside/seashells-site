@@ -25,14 +25,14 @@
     padding: 0;
     margin-bottom: 155px;
     text-align: center;
-    font-size: 51px;
+    font-size: 60px;
     line-height: 135%;
     color: var(--color-white);
 }
 
 .hero_address {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.05em;
     text-align: center;
@@ -43,11 +43,21 @@
     margin: 0;
     padding: 0;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.05em;
     text-align: center;
     color: var(--color-white);
+}
+
+@media (max-width: 1600px) {
+    .hero_title {
+        font-size: 51px;
+    }
+
+    .hero_address, .hero__date {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 1200px) {

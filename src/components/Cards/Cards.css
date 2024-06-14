@@ -20,7 +20,7 @@
 .about__cards-title-part1, .about__cards-title-part2 {
     margin: 0;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 24px;
     line-height: 150%;
     letter-spacing: 0.05em;
     color: var(--color-dark-font);
@@ -39,11 +39,23 @@
     transition: color 0.3s ease-in-out;
 }
 
+@media (max-width: 1600px) {
+    .about__cards-title-part1, .about__cards-title-part2 {
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 992px) {
     .about__cards-item {
         padding: 10px;
     }
 
+    .about__cards-number {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 776px) {
     .about__cards-number {
         font-size: 76px;
     }

@@ -19,7 +19,7 @@
     margin: 0;
     margin-bottom: 50px;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.05em;
     color: var(--color-dark-font);
@@ -110,6 +110,12 @@
 
 .active-btn {
     transform: translate(-20px, 20px) rotate(-3deg);;
+}
+
+@media (max-width: 1600px) {
+    .participant__desc {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 1200px) {
