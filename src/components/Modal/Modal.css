@@ -4,7 +4,7 @@
     background-color: white;
     border-width: 0;
     padding: 0;
-    transform: translateY(-100%);
+    top: -100%;  /* Начальное положение за пределами видимой области */
 }
   
 .modal[open] {
